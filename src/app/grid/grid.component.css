@@ -1,0 +1,19 @@
+header {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.box {
+  height: 300px;
+  width: 200px
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.articles {
+  font-family: 'Roboto', sans-serif;
+  color: darkgrey
+}

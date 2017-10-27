@@ -1,0 +1,26 @@
+<header>
+  FAVORITE CHARACTERS <i class="material-icons">arrow_forward</i>
+  <div *ngFor="let favorite of favorites | slice:0:3 ">
+    <img src="{{ favorite.image }}" class="box">
+    <br>
+    {{ favorite.name }}  <br>
+    {{ favorite.house }} <br>
+    {{ favorite.patronus }} <br>
+    {{ favorite.actor }} <br>
+  </div>
+</header>
+<div>
+<mat-grid-list cols="4" rowHeight="4:5">
+  <mat-grid-tile *ngFor="let character of characters" class="articles">
+<div>
+      <img src="{{ character.image }}" class="box">
+      <i class="material-icons" (click)="favorite(character)">favorite</i>
+      <br>
+      {{ character.name }}  <br>
+      {{ character.house }} <br>
+      {{ character.patronus }} <br>
+      {{ character.actor }} <br>
+</div>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>
